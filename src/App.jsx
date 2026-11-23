@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import {
   ArrowDownRight,
   ArrowUpRight,
-  GithubIcon,
-  LinkedinIcon,
+
   Mail,
   Menu,
   X,
@@ -100,7 +99,7 @@ function Contact() {
     <div className="contact-inner"><SectionLabel number="04">HAVE A PROJECT IN MIND?</SectionLabel>
       <h2>Let's make<br/><em>it happen.</em></h2><p>Have an opportunity, an interesting problem, or an idea worth building? I'd love to hear about it.</p>
       <div className="contact-actions"><a className="button button-primary" href={`mailto:${profile.email}`}>Start a conversation <ArrowUpRight size={17}/></a><button className="copy-button" onClick={copyEmail}>{copied ? <Check size={16}/> : <Copy size={16}/>} {copied ? 'Copied' : profile.email}</button></div>
-      <div className="social-links"><a href={profile.github} target="_blank" rel="noreferrer"><GithubIcon size={17}/> GitHub <ArrowUpRight size={13}/></a><a href={profile.linkedin} target="_blank" rel="noreferrer"><LinkedinIcon size={17}/> LinkedIn <ArrowUpRight size={13}/></a><a href={`mailto:${profile.email}`}><Mail size={17}/> Email <ArrowUpRight size={13}/></a></div>
+      <div className="social-links"><a href={profile.github} target="_blank" rel="noreferrer"> GitHub <ArrowUpRight size={13}/></a><a href={profile.linkedin} target="_blank" rel="noreferrer"> LinkedIn <ArrowUpRight size={13}/></a><a href={`mailto:${profile.email}`}><Mail size={17}/> Email <ArrowUpRight size={13}/></a></div>
     </div>
     <div className="contact-decoration">AR<span>✳</span></div>
   </section>;
